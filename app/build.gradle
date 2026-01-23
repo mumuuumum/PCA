@@ -16,6 +16,12 @@ android {
         resourceConfigurations += ["en", "ar", "de", "es", "in", "it", "ru", "tr", "uk", "zh-rCN"]
 
         buildConfigField "long", "BUILD_TIME", System.currentTimeMillis() + "L"
+
+        externalNativeBuild {
+            ndk {
+                abiFilters 'riscv64'
+            }
+        }
     }
 
     buildTypes {
