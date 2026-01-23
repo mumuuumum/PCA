@@ -3,7 +3,7 @@
 buildscript {
     repositories {
         maven {
-            url '/opt/android-plugin'
+            url '/opt/android-plugin/repo-agp7.4-dev'
         }
         google()
         mavenCentral()
@@ -19,7 +19,7 @@ buildscript {
 allprojects {
     repositories {
         maven {
-            url '/opt/android-plugin'
+            url '/opt/android-plugin/repo-agp7.4-dev'
         }
         google()
         mavenCentral()
