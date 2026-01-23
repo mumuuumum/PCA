@@ -2,6 +2,9 @@
 
 buildscript {
     repositories {
+        maven {
+            url '/opt/android-plugin'
+        }
         google()
         mavenCentral()
     }
@@ -15,6 +18,9 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url '/opt/android-plugin'
+        }
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
